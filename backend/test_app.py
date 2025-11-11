@@ -41,9 +41,16 @@ class TestBackendAPI(unittest.TestCase):
         self.client = app.test_client()
 
     def tearDown(self):
-        """Restore original DB_PATH"""
+        """Restore original DB_PATH and clean database"""
         import app as app_module
         app_module.DB_PATH = self.original_db_path
+        # Clean up test database
+        if os.path.exists(self.test_db_path):
+            os.unlink(self.test_db_path)
+        # Recreate for next test
+        self.test_db = tempfile.NamedTemporaryFile(delete=False, suffix='.db')
+        self.test_db_path = self.test_db.name
+        self.test_db.close()
 
     def test_health_endpoint(self):
         """Test health check endpoint"""
