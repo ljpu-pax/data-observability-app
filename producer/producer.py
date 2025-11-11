@@ -9,7 +9,7 @@ import requests
 from datetime import datetime
 import numpy as np
 
-BACKEND_URL = "http://localhost:5000/api/telemetry"
+BACKEND_URL = "http://localhost:5001/api/telemetry"
 EMIT_INTERVAL = 1.0  # seconds
 
 

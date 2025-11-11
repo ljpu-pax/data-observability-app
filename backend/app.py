@@ -176,6 +176,6 @@ def health():
 if __name__ == '__main__':
     print("Initializing backend...")
     init_db()
-    print("Starting Flask server on http://localhost:5000")
+    print("Starting Flask server on http://localhost:5001")
     print("-" * 50)
-    socketio.run(app, host='0.0.0.0', port=5000, debug=False)
+    socketio.run(app, host='0.0.0.0', port=5001, debug=False, allow_unsafe_werkzeug=True)

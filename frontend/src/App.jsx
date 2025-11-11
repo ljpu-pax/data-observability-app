@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import io from 'socket.io-client'
 import './App.css'
 
-const BACKEND_URL = 'http://localhost:5000'
+const BACKEND_URL = 'http://localhost:5001'
 const COLORS = ['#8884d8', '#82ca9d', '#ffc658', '#ff7c7c', '#8dd1e1']
 
 function App() {

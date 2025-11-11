@@ -88,7 +88,7 @@ You'll need three terminal windows to run all components:
 cd backend
 python app.py
 ```
-The backend will start on `http://localhost:5000`
+The backend will start on `http://localhost:5001`
 
 **Terminal 2 - Producer:**
 ```bash
