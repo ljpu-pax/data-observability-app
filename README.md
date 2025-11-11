@@ -7,7 +7,7 @@ A real-time telemetry monitoring system with a Python backend and React frontend
 - **Telemetry Producer**: Generates 5 different signal types (sine wave, cosine wave, random noise, random walk, damped oscillation)
 - **Backend API**: Flask server with SQLite database, REST endpoints, and WebSocket support for real-time updates
 - **Frontend Dashboard**: React application with live plotting using Recharts
-- **Unit Tests**: Comprehensive test suite for backend API
+- **Unit Tests**: Comprehensive test suites for both backend (7 tests) and frontend (7 tests)
 
 ## Architecture
 
@@ -106,10 +106,16 @@ The dashboard will open at `http://localhost:3000`
 
 ### Running Tests
 
-To run the backend unit tests:
+**Backend unit tests:**
 ```bash
 cd backend
 python -m pytest test_app.py -v
+```
+
+**Frontend unit tests:**
+```bash
+cd frontend
+npm test
 ```
 
 ## API Endpoints
