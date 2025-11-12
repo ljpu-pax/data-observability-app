@@ -8,6 +8,13 @@ A real-time telemetry monitoring system with a Python backend and React frontend
 - **Backend API**: Flask server with SQLite database, REST endpoints, and WebSocket support for real-time updates
 - **Frontend Dashboard**: React application with live plotting using Recharts
 - **Unit Tests**: Comprehensive test suites for both backend (7 tests) and frontend (7 tests)
+- **Documentation**: Detailed architecture and performance documentation
+
+## Documentation
+
+- **[README.md](README.md)**: Quick start guide and setup instructions (this file)
+- **[ARCHITECTURE.md](ARCHITECTURE.md)**: Detailed system architecture, design decisions, and data flow
+- **[PERFORMANCE.md](PERFORMANCE.md)**: Performance metrics, scalability analysis, and optimization strategies
 
 ## Architecture
 
